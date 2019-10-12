@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="app/assets/stylesheets" href="basic_navigation.css">
+    <title>Accessible Navigation Step 2</title>
+  </head>
+
+  <body>
+    <h1>Accessible Navigation Step 2</h1>
+    <nav>
+      <div id="navbar">
+	<ul>
+	  <li><a href="/Home/Index.html.erb">Home</a></li>
+	  <li><a href="/About.html.erb">About</a></li>
+	  <li><a href="/Contact.html.erb">Contact</a></li>
+	</ul>
+      </div>
+    </nav>
+    <p>About page</p>
+  </body>
+</html>

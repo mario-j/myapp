@@ -1,0 +1,28 @@
+<% provide(:title, "EightBall") %>
+<h1>Accessible Navigation Step 2</h1>
+<nav>
+  <div id="navbar">
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/eightball">Eight Ball</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div style="text-align: center"
+     <ul>
+       <li id="eightball" onclick="shakeEightBall()">Shake</li>
+       <li id="eightballOutcome"></li>
+     </ul>
+</div>
+
+<script>
+  function shakeEightBall() {
+  var eightBallMessages = ["Nope.", "Absolutely not.", "It's a no from me.", "Ummmmmm no.", "Yup", "Absolutely", "For sure.", "Yea, but only if you finish your homework.", "Try again in a few years.", "I doubt it."];
+  var randomMessageIndex = Math.floor((Math.random() * 9) + 1);
+  document.getElementById("eightballOutcome").innerText = eightBallMessages[randomMessageIndex];
+}
+</script>
+

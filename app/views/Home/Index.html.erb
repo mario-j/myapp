@@ -1,0 +1,30 @@
+<% provide(:title, "Home") %>
+<h1>Home</h1>
+<nav>
+  <div id="navbar">
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/eightball">Eight Ball</a></li>
+    </ul>
+  </div>
+</nav>
+<p>Linking the stylesheet <a href="basic_navigation.css">basic_navigation.css</a>, enclosing the list in a &lt;div id=&quot;navbar&quot;&gt; ..... &lt;/div&gt; tag, and making each list item a hyperlink turns this list into a navigation menu.</p>
+<p>The &lt;div&gt; ... &lt;/div&gt; tag defines a region in the page. This one is identified as the &quot;navbar&quot;.  Divisions are usually styled with either an id or a class. </p>
+<p>Each id can only be used once in a page ... that is, that type of region can only appear on a page once. It's usually used for items such as a banner, a page footer, a navigation menu, etc. In the stylesheet, an id definition begins with a &quot;#&quot; sign.</p>
+<p>A class can be used to style multiple regions on a page. In the stylesheet a class definition begins with a &quot;.&quot;.</p>
+<h3>Making the Navbar More Accessible</h3>
+<p>Use &lt;nav&gt; .... &lt;/nav&gt; to define the section that is your navigation menu. This helps people who use a screen reader to jump to that specific region.</p>
+<h3>Making the Navbar More Visually Appealing</h3>
+<p>You can make the navigation bar more appealing by adding a stylesheet rule for how the &quot;button&quot; looks when the cursor is pointing to it. That's called hovering in web development and can be defined by a CSS rule such as:</p>
+<div class="example"><br>
+  #navbar a:hover {<br>
+  background-color: #3e4142; <br>
+  color: #FDFDFD; <br>
+  border-color: #000 #CCC #CCC #000;<br>
+  } <br></div>
+<p>Play around with border colors and positioning until it looks the way you would like. </p>
+<h2>Resources</h2>
+<p><a href="https://www.w3.org/WAI/tutorials/menus/">Web Accessibility Tutorials</a></p>
+</body>

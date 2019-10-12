@@ -1,0 +1,21 @@
+<% provide(:title, "EightBall") %>
+<h1>Accessible Navigation Step 2</h1>
+<nav>
+  <div id="navbar">
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/eightball">Eight Ball</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div style="text-align: center"
+     <ul>
+       <li id="eightball">Shake</li>
+       <li id="eightballOutcome"></li>
+     </ul>
+</div>
+
+
