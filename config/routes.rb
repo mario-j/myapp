@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   root 'application#index'
 
   get '/home', to: 'application#index'
@@ -8,6 +9,8 @@ Rails.application.routes.draw do
   get '/contact', to: 'application#contact'
 
   get '/eightball', to: 'application#eightball'
+  
+  get '/signup', to: 'users#new'
 end
 
 

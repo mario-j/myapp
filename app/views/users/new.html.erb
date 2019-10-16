@@ -1,0 +1,39 @@
+<% provide(:title, 'Sign up') %>
+<h1>Sign up</h1>
+<nav>
+  <div id="navbar">
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/eightball">Eight Ball</a></li>
+      <li><a href="/signup">Sign Up</a></li>
+    </ul>
+  </div>
+</nav>
+<p> Here is the database with dummy data for Homework 7 </p>
+
+<table style="width:100%">
+<tr>
+  <th>ID</th>
+  <th>Name</th>
+  <th>Email</th>
+</tr>
+
+<% User.all.each do |user| %>
+<tr style="text-align: center">
+  <td><%= user.id %></td> 
+  <td><%= user.name %></td>
+  <td><%= user.email %></td>
+  <br />
+</tr>
+<% end %>
+</table>
+
+
+
+
+
+
+
+
